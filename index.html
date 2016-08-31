@@ -5,14 +5,15 @@
 	<meta charset="UTF-8">
 	<title>Tri-tri-trivia Game!</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/images">
+	<link rel="stylesheet" type="text/images" href="assets/images">
+	<link rel="stylesheet" type="text/music" href="assets/music">
 	<!--Bootstrap CDN-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
 <body>
 	<!--Navbar-->
-	<nav class="navbar navbar-default">
+<!-- 	<nav class="navbar navbar-default">
   		<div class="container-fluid">
     	<div class="navbar-header">
     		<a class="navbar-brand" href="#">
@@ -20,7 +21,7 @@
       		</a>
     	</div>
   	</div>
-  	</nav>
+  	</nav> -->
 
 	<div class="page-header">
   		<h1>Match the murderer to their crimes <small>   Test your knowledge down below!</small></h1>
@@ -29,10 +30,8 @@
 	<br>
 	<!--Start and restart clock-->
 	 <div id="wrapper">
+	 	<div id="time-left"></div>
 		<div id="display">00:00</div>
-		<div id="buttons">
-			<button id="start">Start</button>
-			<button id="reset">Restart</button>
 		</div>
 	</div>
  
@@ -158,6 +157,8 @@
    </footer>
    <!--Jquery CDN-->
    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
 </body>
 </html>
