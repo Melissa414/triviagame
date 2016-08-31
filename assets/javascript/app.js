@@ -1,6 +1,9 @@
 
 // console.log('loaded');
 
+var audio = new Audio('assests/music/thedoors.mp3');
+audio.play();
+
 
 //timer- start and reset buttons
 window.onload = function(){
@@ -41,8 +44,7 @@ var stopwatch = {
 
 
 var questions = 0;
-var wrongAnswer = false;
-var rightAnswer = true;
+var title = true;
 var choices = 0;
 var wins = 0;
 var losses = 0;
@@ -58,7 +60,7 @@ var triviaGame = {
 			'Richard Chase'
 					],
 		'answer' : 'Ted Bundy',
-	}
+	
 
 
 	
@@ -71,7 +73,8 @@ var triviaGame = {
 			'Alphabet Killer'
 					],
 		'answer' : 'Ted Bundy',
-	}
+	
+
 
 
 	'question3' : {  //Q&A 3
@@ -83,7 +86,7 @@ var triviaGame = {
 				'Jeffrey Dahmer'
 					],
 		'answer' : 'Jeffrey Dahmer',
-	}
+	
 
 		
 	'question4' : {  //Q&A 4
@@ -96,7 +99,7 @@ var triviaGame = {
 					],
 		'answer' : 'Son of Sam',
 
-	}
+	
 
 
 		'question5' : {  //Q&A 5
@@ -108,7 +111,7 @@ var triviaGame = {
 				'Ottis Toole'
 					],
 		'answer' : 'Albert Fish',
-	}
+	
 
 	
 		'question6' : {  //Q&A 6
@@ -120,27 +123,32 @@ var triviaGame = {
 				'Lake Bodom Murderer'
 					],
 		'answer' : 'Jack the Ripper',
+		}
+	   }
+	  }
+	 }
 	}
-}
-
-score = 0;
-title = 0;
-choices = 0;
-submit = true;
-answer = true;
-wrongAnswer = false;
-player = 0;
-wins = 0;
-losses = 0;
-
-$(document).ready(function() {
+   }
 
 
-	$('#player').on('click', function(checkbox){
-		if('choices' === 'answer'){
+// score = 0;
+// title = 0;
+// choices = 0;
+// submit = true;
+// answer = true;
+// wrongAnswer = false;
+// player = 0;
+// wins = 0;
+// losses = 0;
+
+$( document ).ready(function() {
+
+
+	$('#player').on('click', function(checkbox)){
+		if('choices' == 'answer'){
 			wins++;
 		}
-		else if('choices' != 'answer'){
+		else if('choices' !== 'answer'){
 			losses++
 		}
 	});
@@ -158,7 +166,6 @@ $(document).ready(function() {
 
 	$('.submitButton').click(function(){
   		document.location.reload(true);
-	});
 });
 
 	

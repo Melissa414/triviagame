@@ -1,3 +1,42 @@
 body{
-	background: black;
+	background: url('black.gif');
+	color: white;
+}
+
+.navbar-header{
+	color: grey;
+}
+
+.page-header{
+	color: grey;
+}
+
+#wrapper{
+	text-align: center;
+}
+
+#display{
+	font-size: 60px;
+	color: white;
+}
+
+.checkbox-inline{
+	font-size: 23px;
+	color: white;
+	padding: 13px;
+}
+
+h1{
+	
+}
+
+h3{
+	border-style: solid;
+	background:white;
+	padding: 10px;
+}
+
+footer{
+	background-color: white;
+	padding-top: 15px;
 }

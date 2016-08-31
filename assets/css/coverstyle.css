@@ -1,3 +1,17 @@
 body{
-	
+	background: url('background.jpg');
+}
+
+.navbar-header{
+	background: grey;
+	text-align: center;
+}
+
+.jumbotron{
+	width: 80%;
+}
+
+footer{
+	background-color: white;
+
 }
